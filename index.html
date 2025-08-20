@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio designed by Pratanu</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://kit.fontawesome.com/80968458e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="contain">
+            <nav>
+                <ul>
+                    <li><a href="#header">HOME </a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#Project">PROJECT</a></li>
+                    <li><a href="#Resume">RESUME</a></li>
+                    <li><a href="#Contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <img src="coollogo_com-125252570.png"
+                    class="logo">
+            <div class="header-txt">
+                <p>WEB DEVELOPER</p>
+                <H1>Hi, I'm <br> Pratanu Dolui</H1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="contain">
+            <div class="rows">
+                <div class="about-col1">
+                    <img src="IMG-20230101-WA0073.jpg">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1><br>
+                    <p>A Passionate WEB Developer having an experience of<br>
+                        building creative and interesting web application using<br>
+                        JavaScript/CSS/HTML</p><br>
+                    <div class="skills-tab">
+                        <p class="s-tab s1-tab" onclick="opentab('SKILLS')">SKILLS</p>
+                        <p class="s-tab" onclick="opentab('EDUCATION')">EDUCATION</p>
+                    </div>
+                    <div class="skill-contents active-tab" id="SKILLS"><br>
+                        <ul>
+                            <li><span>HTML</span><br>Creating web pages</li>
+                            <li><span>JAVASCRIPT</span><br>Making static webpage as an interactive one</li>
+                            <li><span>CSS</span><br>Styling webpage</li>
+                        </ul>
+                    </div>
+                    <div class="skill-contents" id="EDUCATION">
+                        <ul>
+                            <li><span>2018</span><br>X<sup>th</sup> PASS</li>
+                            <li><span>2020</span><br>XII<sup>th</sup> PASS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="Project">
+        <div class="contain">
+            <br><br><h1 class="subtitle">PROJECTS</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h2>JAVA</h2>
+
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>PYTHON</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hippo"></i>
+                    <h2>HTML</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <center>
+    <div id="Resume">
+        <div class="contain">
+            <br><br><br><br><h1 class="subtitle">RESUME</h1>
+        </div>
+        <div class="resumebutton">
+           <br><br><button type="button"><a href="Pratanu Dolui(CV).pdf"> Download Resume <i class="fa-solid fa-download"></i></a></button>
+        </div>
+    </div>
+    </center>
+    <br>
+    <br>
+    <div id="Contact">
+        <div class="contain">
+            <center><h1 class="subtitle">CONTACT</h1></center>
+            <div class="Contact-list">
+                <div>
+                    <h2>Email</h2>
+                    <a href="mailto:pratanudolui58@gmail.com" target="_blank" rel="noreferrer">pratanudolui58@gamil.com</a>
+                </div>
+                <div>
+                    <h2>Linkedin</h2>
+                    <a href="https://www.linkedin.com/in/pratanu-dolui-044761229/" target="_blank" rel="noreferrer">Pratanu Dolui</a>
+                </div>
+                <div>
+                    <h2>GitHub</h2>
+                    <a href="https://github.com/Pratanudolui" target="_blank" rel="noreferrer">Pratanudolui</a>
+                    </div>
+                 </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="footer">
+        <center><p>© 2023 <b>Pratanu Dolui.</b> All Rights Reserved.</p></center>
+    </div>
+
+    <script>
+        var skillstab = document.getElementsByClassName("s-tab");
+        var skillcontents = document.getElementsByClassName("skill-contents");
+        function opentab(skillname) {
+            for (skillsstab of skillstab) {
+                skillsstab.classList.remove("s1-tab");
+            }
+            for (skillcontent of skillcontents) {
+                skillcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("s1-tab");
+            document.getElementById(skillname).classList.add("active-tab");
+        }
+       
+    </script>
+</body>
+
+</html>
